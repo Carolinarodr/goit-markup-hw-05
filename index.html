@@ -34,7 +34,7 @@
                 <a
                   href="./index.html"
                   rel="noopener noreferrer"
-                  class="header-links"
+                  class="header-links active"
                   >Estudio</a
                 >
               </li>
@@ -86,10 +86,19 @@
               SOLUCIONES EFICACES PARA <span class="salto"></span> NEGOCIO
             </h1>
             <div class="button-one">
-              <button class="button-primary" type="button">
+              <button class="button-primary" type="button" onclick="openModal()">
                 Solicite nuestro servicio
               </button>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="modal" id="modal">
+        <div class="modal-container">
+          <div class="container-svg">
+            <svg class="modal-close" onclick="closeModal()">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
           </div>
         </div>
       </section>
@@ -438,5 +447,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
