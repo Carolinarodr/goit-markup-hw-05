@@ -1,7 +1,14 @@
-function openModal() {
-  document.getElementById("modal").style.display = "block";
-}
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[button-primary]"),
+    closeModalBtn: document.querySelector("[container-svg]"),
+    modal: document.querySelector("[modal-backdrop]"),
+  };
 
-function closeModal() {
-  document.getElementById("modal").style.display = "none";
-}
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("modal is-hidden");
+  }
+})();
