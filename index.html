@@ -72,17 +72,6 @@
             </div>
         </div>
       </div>
-      <!-- Backdrop y Ventana Modal -->
-      <div class="modal-backdrop">
-        <div class="modal is-hidden">
-          <!-- Contenido de la ventana modal -->
-          <div class="container-svg">
-            <svg class="modal-icon" >              
-              <use href="./images/icons.svg#close"></use>
-            </svg>
-          </div>
-        </div>
-      </div>
     </section>
       <!--hero section-->
       <section class="section-one">
@@ -403,6 +392,18 @@
       </div>
     </div>
   </footer>
+  <!-- Backdrop y Ventana Modal -->
+  <div class="modal-backdrop is-hidden">
+    <div class="modal">
+      <!-- Contenido de la ventana modal -->
+      <button class="container-svg" type="button">
+        <svg class="modal-icon">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      </div>
+    </div>
+  </div>
   <script src="./js/modal.js"></script>
 </body>
 
