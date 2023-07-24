@@ -635,34 +635,34 @@ fill: #FFFFFF;
     fill: #2196F3;
 }
 
-/*VENTANA MODAL*/
+/*Ventana modal*/
+
+.modal-backdrop .is-hidden {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .modal-backdrop {
-    position: fixed;
+    display: flex;
+    justify-content: center;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%    ;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: visible;
-    opacity: 1;
-    pointer-events: none;
-    transition: visibility 0s, opacity 0.3s;
 }
 
 .modal {
-    padding: 20px;
-    border-radius: 4px;
-    background: #FFF;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    display: flex;
     width: 528px;
     height: 581px;
-    transform: scale(0.8);
-    transition: transform 0.3s, opacity 0.3s;
-    
+    margin: auto;
+    border-radius: 4px;
+    background: #FFF; 
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .container-svg {
@@ -685,27 +685,3 @@ fill: #FFFFFF;
     height: 18px;
     cursor: pointer;
 }
-
-.modal.is-hidden {
-    visibility: hidden;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-/* Clase para mostrar la ventana modal */
-.modal:not(.is-hidden) {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-/* Transición al aparecer y desaparecer la ventana modal */
-.modal,
-.modal-backdrop {
-    transition-timing-function: ease-in-out;
-}
-
-.is-hidden {
-    transition-duration: 0s, 0.3s;
-}
-
