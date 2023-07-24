@@ -68,10 +68,11 @@
             <span class="salto"></span>SU NEGOCIO
           </h1>
           <div class="button-one">
-            <button class="button-primary" type="button">Solicite nuestro servicio</button>
+            <button class="button-primary" type="button" data-modal-open>Solicite nuestro servicio</button>
           </div>
         </div>
       </div>
+        
     </section>
       <!--hero section-->
       <section class="section-one">
@@ -393,10 +394,9 @@
     </div>
   </footer>
   <!-- Backdrop y Ventana Modal -->
-  <div class="modal-backdrop is-hidden">
+  <div class="modal-backdrop is-hidden" data-modal>
     <div class="modal">
-      <!-- Contenido de la ventana modal -->
-      <button class="container-svg" type="button">
+      <button class="container-svg" type="button" data-modal-close>
         <svg class="modal-icon">
           <use href="./images/icons.svg#close"></use>
         </svg>
